@@ -1,0 +1,107 @@
+[INSTRUMENT]
+name = Plinky - Synth Mode
+port = 1
+channel = 1
+flags = poly_at
+
+[CC]
+13  = Osc Shape
+4   = Osc Distortion
+9   = Osc Pitch
+14  = Osc Interval
+2   = Noise Level
+5   = Glide
+71  = Resonance
+
+101 = Arp Latch
+102 = Arp OnOff
+103 = Arp Order
+104 = Arp ClockDiv
+105 = Arp Chance
+106 = Arp EuclidLen
+107 = Arp Octaves
+
+108 = Seq Order
+109 = Seq ClockDiv
+110 = Seq Chance
+111 = Seq EuclidLen
+11  = Seq GateLen
+83  = Seq Pattern
+85  = Seq Steps
+
+3   = Env1 Sensitivity
+73  = Env1 Attack
+74  = Env1 Sustain
+75  = Env1 Decay
+72  = Env1 Release
+
+19  = Env2 Level
+20  = Env2 Attack
+21  = Env2 Decay
+22  = Env2 Sustain
+23  = Env2 Release
+
+94  = Delay Send
+12  = Delay Time
+112 = Delay PingPong
+113 = Delay Wobble
+95  = Delay Feedback
+
+24  = LFO A Rate
+25  = LFO A Depth
+26  = LFO A Offset
+27  = LFO B Rate
+28  = LFO B Depth
+29  = LFO B Offset
+
+76  = LFO X Rate
+77  = LFO X Depth
+78  = LFO X Offset
+79  = LFO Y Rate
+80  = LFO Y Depth
+81  = LFO Y Offset
+
+91  = Reverb Send
+92  = Reverb Time
+93  = Reverb Shimmer
+114 = Reverb Wobble
+
+15  = Sample Scrub
+16  = Sample GrainSize
+17  = Sample PlaySpeed
+18  = Sample Timestretch
+82  = Sample Select
+
+116 = Jitter Position
+117 = Jitter Grain
+118 = Jitter Rate
+
+89  = ExtIn Volume
+90  = ExtIn WetDry
+31  = HPF Amount
+7   = Synth Level
+8   = FX WetDry
+
+[OUTPUT]
+32 = Pos Col1
+33 = Pos Col2
+34 = Pos Col3
+35 = Pos Col4
+36 = Pos Col5
+37 = Pos Col6
+38 = Pos Col7
+39 = Pos Col8
+40 = Press Col1
+41 = Press Col2
+42 = Press Col3
+43 = Press Col4
+44 = Press Col5
+45 = Press Col6
+46 = Press Col7
+47 = Press Col8
+
+[PROGRAMS]
+0 = Patch 1
+1 = Patch 2
+2 = Patch 3
+127 = Patch 128
