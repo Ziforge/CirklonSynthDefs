@@ -1,4 +1,4 @@
-# Sequentix Cirklon Instrument Definitions for Plinky Synthesizer
+# Sequentix Cirklon Instrument Definitions Collection
 
 [![MIDI](https://img.shields.io/badge/MIDI-CC_Mapping-blue.svg)](https://midi.org)
 [![Cirklon](https://img.shields.io/badge/Sequentix-Cirklon-orange.svg)](https://sequentix.com)
@@ -8,14 +8,17 @@
 
 ## Abstract
 
-This repository provides **MIDI Control Change (CC) mapping files** (.cki format) for the **Sequentix Cirklon** hardware sequencer to control the **Plinky** touch-plate synthesizer. The instrument definitions enable comprehensive parameter automation across Plinky's synthesis engine, including oscillators, granular sampler, dual envelopes, four LFOs, arpeggiator, step sequencer, and effects (delay, reverb). The mappings leverage standard MIDI 1.0 protocol for real-time performance control and studio sequencing workflows.
+This repository provides a **collection of MIDI Control Change (CC) mapping files** (.cki format) for the **Sequentix Cirklon** hardware sequencer to control various hardware synthesizers. The instrument definitions enable comprehensive parameter automation across multiple synthesis engines, leveraging the standard MIDI 1.0 protocol for real-time performance control and studio sequencing workflows.
+
+**Current Instruments:**
+- **Plinky Synthesizer** (Synth Mode, Sampler Mode) — Touch-plate synthesizer with granular sampling, dual envelopes, four LFOs, arpeggiator, step sequencer, and effects (delay, reverb)
 
 **Key Features:**
-- Two instrument definitions (Synth Mode, Sampler Mode)
-- Complete MIDI CC mapping for 60+ synthesis parameters
-- MPE-style multi-column position and pressure outputs
+- Complete MIDI CC mapping for synthesis parameters (60+ per instrument)
+- MPE-style multi-column position and pressure outputs (Plinky)
 - Euclidean rhythm integration (arpeggiator and sequencer)
 - Granular synthesis parameter control (grain size, scrub, jitter)
+- Per-step parameter locks (p-locks) support
 
 **Application**: Live electronic music performance, studio MIDI sequencing, generative music systems, hardware synthesizer integration.
 
