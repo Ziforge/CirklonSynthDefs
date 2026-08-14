@@ -27,10 +27,21 @@ Two flags appear on some instruments and matter:
 
 This repository provides a **collection of MIDI Control Change (CC) mapping files** (.cki format) for the **Sequentix Cirklon** hardware sequencer to control various hardware synthesizers. The instrument definitions enable comprehensive parameter automation across multiple synthesis engines, leveraging the standard MIDI 1.0 protocol for real-time performance control and studio sequencing workflows.
 
-**Current Instruments:**
-- **Plinky Synthesizer** (Synth Mode, Sampler Mode) — Touch-plate synthesizer with granular sampling, dual envelopes, four LFOs, arpeggiator, step sequencer, and effects (delay, reverb)
-- **Korg phase8** (22 CCs) — Acoustic synthesizer. Eight Velocity and eight Envelope knobs, Mod Depth/Rate/Type, Air, Shift. Derived from Korg's own MIDI Implementation Chart (manual v02, 2026-04-15)
-- **Elektron Digitone II** (73 CCs) — Filter section and envelope, four synth parameter pages (A–H), both LFOs, chorus/delay/reverb sends, track level. Derived from Elektron's MIDI CC reference
+**Current Instruments** — 7 definitions, 388 CC labels:
+
+| Instrument | CCs | Source |
+|---|---|---|
+| Plinky (Synth Mode) | 65 | Plinky documentation |
+| Plinky (Sampler Mode) | 65 | Plinky documentation |
+| Korg phase8 | 22 | Korg MIDI Implementation Chart, manual v02 |
+| Elektron Digitone II | 73 | Elektron MIDI CC reference |
+| Elektron Analog Rytm MKII | 59 | Analog Rytm MKII manual, Appendix C |
+| Elektron Analog Rytm MKII (FX) | 40 | Analog Rytm MKII manual, Appendix C.7 |
+| Elektron Octatrack MKII | 64 | Octatrack MKII manual, Appendix C.7 |
+
+The Rytm ships as **two** definitions because its drum tracks and FX track
+reuse CC 16–23 for different parameters — synth parameters on a track, delay
+settings on the FX channel.
 
 **Key Features:**
 - Complete MIDI CC mapping for synthesis parameters (60+ per instrument)

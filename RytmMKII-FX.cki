@@ -1,0 +1,331 @@
+{
+	"instrument_data": {
+		"RytmMKII-FX": {
+			"midi_port": 1,
+			"midi_chan": 12,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": true,
+			"no_fts": true,
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 16,
+					"label": "DlyTm"
+				},
+				"slot_2": {
+					"MIDI_CC": 17,
+					"label": "DlyPP"
+				},
+				"slot_3": {
+					"MIDI_CC": 18,
+					"label": "DlyStW"
+				},
+				"slot_4": {
+					"MIDI_CC": 19,
+					"label": "DlyFB"
+				},
+				"slot_5": {
+					"MIDI_CC": 20,
+					"label": "DlyHPF"
+				},
+				"slot_6": {
+					"MIDI_CC": 21,
+					"label": "DlyLPF"
+				},
+				"slot_7": {
+					"MIDI_CC": 22,
+					"label": "DlyRev"
+				},
+				"slot_8": {
+					"MIDI_CC": 23,
+					"label": "DlyMix"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_16": {
+					"label": "DlyTm",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_17": {
+					"label": "DlyPP",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_18": {
+					"label": "DlyStW",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_19": {
+					"label": "DlyFB",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_20": {
+					"label": "DlyHPF",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_21": {
+					"label": "DlyLPF",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_22": {
+					"label": "DlyRev",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_23": {
+					"label": "DlyMix",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_24": {
+					"label": "RevPre",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_25": {
+					"label": "RevDec",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_26": {
+					"label": "RevShl",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_27": {
+					"label": "RevShl",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_28": {
+					"label": "RevHPF",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_29": {
+					"label": "RevLPF",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_31": {
+					"label": "RevMix",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_35": {
+					"label": "Perf1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_36": {
+					"label": "Perf2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_37": {
+					"label": "Perf3",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_39": {
+					"label": "Perf4",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_40": {
+					"label": "Perf5",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_41": {
+					"label": "Perf6",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_42": {
+					"label": "Perf7",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_43": {
+					"label": "Perf8",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_44": {
+					"label": "Perf9",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_45": {
+					"label": "Perf10",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_46": {
+					"label": "Perf11",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_47": {
+					"label": "Perf12",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_70": {
+					"label": "DistAm",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_71": {
+					"label": "DistSy",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_72": {
+					"label": "DlyOD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_76": {
+					"label": "DlyDis",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_77": {
+					"label": "RevDis",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_78": {
+					"label": "CompTh",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_79": {
+					"label": "CompAt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_80": {
+					"label": "CompRe",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_81": {
+					"label": "CompMa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_82": {
+					"label": "CompRa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_83": {
+					"label": "CompSi",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_84": {
+					"label": "CompDr",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_85": {
+					"label": "CompOu",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				}
+			}
+		}
+	}
+}

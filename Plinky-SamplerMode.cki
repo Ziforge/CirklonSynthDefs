@@ -1,107 +1,479 @@
-[INSTRUMENT]
-name = Plinky - Sampler Mode
-port = 1
-channel = 1
-flags = poly_at,no_xpose,no_fts
-
-[CC]
-13  = Osc Shape
-4   = Osc Distortion
-9   = Osc Pitch
-14  = Osc Interval
-2   = Noise Level
-5   = Glide
-71  = Resonance
-
-101 = Arp Latch
-102 = Arp OnOff
-103 = Arp Order
-104 = Arp ClockDiv
-105 = Arp Chance
-106 = Arp EuclidLen
-107 = Arp Octaves
-
-108 = Seq Order
-109 = Seq ClockDiv
-110 = Seq Chance
-111 = Seq EuclidLen
-11  = Seq GateLen
-83  = Seq Pattern
-85  = Seq Steps
-
-3   = Env1 Sensitivity
-73  = Env1 Attack
-74  = Env1 Sustain
-75  = Env1 Decay
-72  = Env1 Release
-
-19  = Env2 Level
-20  = Env2 Attack
-21  = Env2 Decay
-22  = Env2 Sustain
-23  = Env2 Release
-
-94  = Delay Send
-12  = Delay Time
-112 = Delay PingPong
-113 = Delay Wobble
-95  = Delay Feedback
-
-24  = LFO A Rate
-25  = LFO A Depth
-26  = LFO A Offset
-27  = LFO B Rate
-28  = LFO B Depth
-29  = LFO B Offset
-
-76  = LFO X Rate
-77  = LFO X Depth
-78  = LFO X Offset
-79  = LFO Y Rate
-80  = LFO Y Depth
-81  = LFO Y Offset
-
-91  = Reverb Send
-92  = Reverb Time
-93  = Reverb Shimmer
-114 = Reverb Wobble
-
-15  = Sample Scrub
-16  = Sample GrainSize
-17  = Sample PlaySpeed
-18  = Sample Timestretch
-82  = Sample Select
-
-116 = Jitter Position
-117 = Jitter Grain
-118 = Jitter Rate
-
-89  = ExtIn Volume
-90  = ExtIn WetDry
-31  = HPF Amount
-7   = Synth Level
-8   = FX WetDry
-
-[OUTPUT]
-32 = Pos Col1
-33 = Pos Col2
-34 = Pos Col3
-35 = Pos Col4
-36 = Pos Col5
-37 = Pos Col6
-38 = Pos Col7
-39 = Pos Col8
-40 = Press Col1
-41 = Press Col2
-42 = Press Col3
-43 = Press Col4
-44 = Press Col5
-45 = Press Col6
-46 = Press Col7
-47 = Press Col8
-
-[PROGRAMS]
-0 = Patch 1
-1 = Patch 2
-2 = Patch 3
-127 = Patch 128
+{
+	"instrument_data": {
+		"Plinky - Sampler": {
+			"midi_port": 1,
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 2,
+					"label": "NoisLv"
+				},
+				"slot_2": {
+					"MIDI_CC": 3,
+					"label": "Env1Se"
+				},
+				"slot_3": {
+					"MIDI_CC": 4,
+					"label": "OscDis"
+				},
+				"slot_4": {
+					"MIDI_CC": 5,
+					"label": "Glide"
+				},
+				"slot_5": {
+					"MIDI_CC": 7,
+					"label": "SynLvl"
+				},
+				"slot_6": {
+					"MIDI_CC": 8,
+					"label": "FxWetd"
+				},
+				"slot_7": {
+					"MIDI_CC": 9,
+					"label": "OscPit"
+				},
+				"slot_8": {
+					"MIDI_CC": 11,
+					"label": "SeqGat"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_2": {
+					"label": "NoisLv",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_3": {
+					"label": "Env1Se",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_4": {
+					"label": "OscDis",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_5": {
+					"label": "Glide",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_7": {
+					"label": "SynLvl",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_8": {
+					"label": "FxWetd",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_9": {
+					"label": "OscPit",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_11": {
+					"label": "SeqGat",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_12": {
+					"label": "DlyTm",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_13": {
+					"label": "OscSha",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_14": {
+					"label": "OscInt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_15": {
+					"label": "SmpScr",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_16": {
+					"label": "SmpGra",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_17": {
+					"label": "SmpPla",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_18": {
+					"label": "SmpTim",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_19": {
+					"label": "Env2Lv",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_20": {
+					"label": "Env2At",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_21": {
+					"label": "Env2De",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_22": {
+					"label": "Env2Su",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_23": {
+					"label": "Env2Re",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_24": {
+					"label": "LfoARa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_25": {
+					"label": "LfoADe",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_26": {
+					"label": "LfoAOf",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_27": {
+					"label": "LfoBRa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_28": {
+					"label": "LfoBDe",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_29": {
+					"label": "LfoBOf",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_31": {
+					"label": "HpfAmo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_71": {
+					"label": "Res",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_72": {
+					"label": "Env1Re",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_73": {
+					"label": "Env1At",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_74": {
+					"label": "Env1Su",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_75": {
+					"label": "Env1De",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_76": {
+					"label": "LfoXRa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_77": {
+					"label": "LfoXDe",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_78": {
+					"label": "LfoXOf",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_79": {
+					"label": "LfoYRa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_80": {
+					"label": "LfoYDe",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_81": {
+					"label": "LfoYOf",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_82": {
+					"label": "SmpSel",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_83": {
+					"label": "SeqPat",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_85": {
+					"label": "SeqSte",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_89": {
+					"label": "ExtiVo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_90": {
+					"label": "ExtiWe",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_91": {
+					"label": "RevSnd",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_92": {
+					"label": "RevTm",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_93": {
+					"label": "RevShi",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_94": {
+					"label": "DlySnd",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_95": {
+					"label": "DlyFB",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_101": {
+					"label": "ArpLat",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_102": {
+					"label": "ArpOno",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_103": {
+					"label": "ArpOrd",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_104": {
+					"label": "ArpClo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_105": {
+					"label": "ArpCha",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_106": {
+					"label": "ArpEuc",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_107": {
+					"label": "ArpOct",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_108": {
+					"label": "SeqOrd",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_109": {
+					"label": "SeqClo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_110": {
+					"label": "SeqCha",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_111": {
+					"label": "SeqEuc",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_112": {
+					"label": "DlyPP",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_113": {
+					"label": "DlyWob",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_114": {
+					"label": "RevWob",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_116": {
+					"label": "JittPo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_117": {
+					"label": "JittGr",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_118": {
+					"label": "JittRa",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				}
+			}
+		}
+	}
+}
