@@ -6,12 +6,31 @@
 
 ---
 
+## Using these files
+
+Every definition ships with `midi_port: 1` and `midi_chan: 1`. **Set the port
+and channel to match your own cabling** — either on the Cirklon after loading,
+or by editing the JSON before you do. The CC maps are the part worth having;
+the routing is yours.
+
+Two flags appear on some instruments and matter:
+
+- `no_xpose` / `no_fts` — set where note numbers select *sounds* rather than
+  pitches, so scene transpose and force-to-scale do not retune the instrument.
+  Used on the phase8, whose notes 36–43 address its eight resonators.
+- `multi` — one definition serving several tracks, with the MIDI channel chosen
+  per track. Used on multitimbral gear such as the Digitone II.
+
+---
+
 ## Abstract
 
 This repository provides a **collection of MIDI Control Change (CC) mapping files** (.cki format) for the **Sequentix Cirklon** hardware sequencer to control various hardware synthesizers. The instrument definitions enable comprehensive parameter automation across multiple synthesis engines, leveraging the standard MIDI 1.0 protocol for real-time performance control and studio sequencing workflows.
 
 **Current Instruments:**
 - **Plinky Synthesizer** (Synth Mode, Sampler Mode) — Touch-plate synthesizer with granular sampling, dual envelopes, four LFOs, arpeggiator, step sequencer, and effects (delay, reverb)
+- **Korg phase8** (22 CCs) — Acoustic synthesizer. Eight Velocity and eight Envelope knobs, Mod Depth/Rate/Type, Air, Shift. Derived from Korg's own MIDI Implementation Chart (manual v02, 2026-04-15)
+- **Elektron Digitone II** (73 CCs) — Filter section and envelope, four synth parameter pages (A–H), both LFOs, chorus/delay/reverb sends, track level. Derived from Elektron's MIDI CC reference
 
 **Key Features:**
 - Complete MIDI CC mapping for synthesis parameters (60+ per instrument)

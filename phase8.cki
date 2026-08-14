@@ -1,0 +1,223 @@
+{
+	"instrument_data": {
+		"phase8": {
+			"midi_port": 1,
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": true,
+			"no_fts": true,
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 12,
+					"label": "Vel1"
+				},
+				"slot_2": {
+					"MIDI_CC": 20,
+					"label": "Env1"
+				},
+				"slot_3": {
+					"MIDI_CC": 28,
+					"label": "ModDep"
+				},
+				"slot_4": {
+					"MIDI_CC": 29,
+					"label": "ModRat"
+				},
+				"slot_5": {
+					"MIDI_CC": 30,
+					"label": "Air"
+				},
+				"slot_6": {
+					"MIDI_CC": 90,
+					"label": "Shift"
+				},
+				"slot_7": {
+					"MIDI_CC": 92,
+					"label": "ModTyp"
+				},
+				"slot_8": {
+					"MIDI_CC": 31,
+					"label": "Tempo"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_12": {
+					"label": "Vel1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_13": {
+					"label": "Vel2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_14": {
+					"label": "Vel3",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_15": {
+					"label": "Vel4",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_16": {
+					"label": "Vel5",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_17": {
+					"label": "Vel6",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_18": {
+					"label": "Vel7",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_19": {
+					"label": "Vel8",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_20": {
+					"label": "Env1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_21": {
+					"label": "Env2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_22": {
+					"label": "Env3",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_23": {
+					"label": "Env4",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_24": {
+					"label": "Env5",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_25": {
+					"label": "Env6",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_26": {
+					"label": "Env7",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_27": {
+					"label": "Env8",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_28": {
+					"label": "ModDep",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_29": {
+					"label": "ModRat",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_30": {
+					"label": "Air",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_31": {
+					"label": "Tempo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_90": {
+					"label": "Shift",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_92": {
+					"label": "ModTyp",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				}
+			}
+		}
+	}
+}
