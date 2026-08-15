@@ -2,7 +2,7 @@
 	"instrument_data": {
 		"RytmMKII-FX": {
 			"midi_port": 1,
-			"midi_chan": 12,
+			"midi_chan": 13,
 			"default_note": "C 3",
 			"default_patt": "P3",
 			"poly_spread": "off",
@@ -171,78 +171,6 @@
 				},
 				"CC_31": {
 					"label": "RevMix",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_35": {
-					"label": "Perf1",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_36": {
-					"label": "Perf2",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_37": {
-					"label": "Perf3",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_39": {
-					"label": "Perf4",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_40": {
-					"label": "Perf5",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_41": {
-					"label": "Perf6",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_42": {
-					"label": "Perf7",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_43": {
-					"label": "Perf8",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_44": {
-					"label": "Perf9",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_45": {
-					"label": "Perf10",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_46": {
-					"label": "Perf11",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_47": {
-					"label": "Perf12",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
