@@ -53,25 +53,34 @@ Portamento 5/37.
 
 The Cirklon has no 14-bit CC mode — an aux row sends one CC, 0–127 — and NRPN
 does not apply, being a different protocol (CC 99/98 select a parameter, 6/38
-carry the value) that these parameters do not respond to.
+carry the value) that these parameters do not respond to. The Cirklon's own
+NRPN aux would not help even where NRPN *is* the right protocol: Colin has
+confirmed it sends the value MSB only, with no way to set the LSB.
 
-Full resolution *appears* reachable. The manual states that "the auxes are
-processed in order" — which is why Redirect Aux exists for aux B, C and D but
-not A — so assigning the MSB to an earlier aux row than its LSB should emit
-them in the right order:
+Full resolution is still reachable, by spending two aux rows on one parameter.
+Colin Fraser has confirmed this is the intended approach: "Double CCs aren't
+supported, except by setting them up as two separate values" (forum topic 3673).
+Assign the MSB to an earlier aux row than its LSB:
 
     aux A -> cc #12   (Delay Time MSB)
     aux B -> cc #44   (Delay Time LSB)
 
-**Not yet verified on hardware.** The manual documents the *evaluation* order,
-not the order messages are transmitted, and a sequencer could buffer a step's
-output and emit it differently. The two are usually the same, but this scheme
-depends on it, so treat it as untested until someone captures the wire and
-confirms CC 12 arrives before CC 44.
+This relies on aux rows being *transmitted* in row order, which the manual does
+not state — it documents the *evaluation* order ("the auxes are processed in
+order", which is also why Redirect Aux exists for aux B, C and D but not A).
 
-If it holds, one parameter costs two aux rows, so a pattern drives two
-parameters at full resolution — or four at coarse resolution using MSB only,
-which is 128 steps and usually plenty.
+Two forum users report the ordering holding on real hardware. In topic 5457,
+jvq assembles a complete NRPN from four aux rows on a single step — CC 99, 98,
+6 then 38 — to reach Eventide H3000 parameters that its MIDI modulation cannot
+address, "because aux rows get sent out in order". NRPN is strictly
+order-dependent: parameter select must arrive before the value, or the receiver
+acts on the wrong parameter. KloneSir reports the same trick working from the
+track values page. So the ordering is well evidenced in practice, though not
+stated by the manual — take it as reliable rather than guaranteed.
+
+One parameter costs two aux rows, so a pattern drives two parameters at full
+resolution — or four at coarse resolution using MSB only, which is 128 steps
+and usually plenty.
 
 The definition pairs them on the track values page in MSB/LSB order, labelled
 `DlyTm` and `DlyTm~`, so the relationship is visible.
