@@ -1,0 +1,221 @@
+{
+	"instrument_data": {
+		"ClusterFlux": {
+			"midi_port": 1,
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 12,
+					"label": "DlyTm"
+				},
+				"slot_2": {
+					"MIDI_CC": 13,
+					"label": "FdBack"
+				},
+				"slot_3": {
+					"MIDI_CC": 14,
+					"label": "Mix"
+				},
+				"slot_4": {
+					"MIDI_CC": 15,
+					"label": "LfoRat"
+				},
+				"slot_5": {
+					"MIDI_CC": 16,
+					"label": "LfoAmt"
+				},
+				"slot_6": {
+					"MIDI_CC": 74,
+					"label": "Range"
+				},
+				"slot_7": {
+					"MIDI_CC": 70,
+					"label": "LfoWav"
+				},
+				"slot_8": {
+					"MIDI_CC": 7,
+					"label": "OutLvl"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_5": {
+					"label": "Porta",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_7": {
+					"label": "OutLvl",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_12": {
+					"label": "DlyTm",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_13": {
+					"label": "FdBack",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_14": {
+					"label": "Mix",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_15": {
+					"label": "LfoRat",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_16": {
+					"label": "LfoAmt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_37": {
+					"label": "PortaL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_39": {
+					"label": "OutLvl",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_44": {
+					"label": "DlyTmL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_45": {
+					"label": "FdBack",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_46": {
+					"label": "MixL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_47": {
+					"label": "LfoRat",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_48": {
+					"label": "LfoAmt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_70": {
+					"label": "LfoWav",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_71": {
+					"label": "LfoDiv",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_72": {
+					"label": "LfoRst",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_73": {
+					"label": "NoteRs",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_74": {
+					"label": "Range",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_75": {
+					"label": "TmMult",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_76": {
+					"label": "Sync",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_91": {
+					"label": "Bypass",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				}
+			}
+		}
+	}
+}

@@ -27,7 +27,7 @@ Two flags appear on some instruments and matter:
 
 This repository provides a **collection of MIDI Control Change (CC) mapping files** (.cki format) for the **Sequentix Cirklon** hardware sequencer to control various hardware synthesizers. The instrument definitions enable comprehensive parameter automation across multiple synthesis engines, leveraging the standard MIDI 1.0 protocol for real-time performance control and studio sequencing workflows.
 
-**Current Instruments** — 8 definitions, 388 CC labels:
+**Current Instruments** — 12 definitions, 455 CC labels:
 
 | Instrument | CCs | Source |
 |---|---|---|
@@ -39,6 +39,15 @@ This repository provides a **collection of MIDI Control Change (CC) mapping file
 | Elektron Analog Rytm MKII (FX) | 28 | Appendix C.7 |
 | Elektron Analog Rytm MKII (Perf) | 12 | Appendix C.4 |
 | Elektron Octatrack MKII | 64 | Octatrack MKII manual, Appendix C.7 |
+| OTO Machines BAM | 12 | OTO MIDI specification |
+| OTO Machines BIM | 20 | OTO MIDI specification |
+| OTO Machines BOUM | 13 | OTO MIDI specification |
+| Moog MF-108M Cluster Flux | 22 | MF-108M manual, MIDI section |
+
+The Cluster Flux uses 14-bit CCs — an MSB with its LSB at MSB+32. The Cirklon
+sends 7-bit CC, so only the MSBs are useful as track values; the LSBs are
+labelled for completeness. The three OTO boxes each use CC 12 upward, one
+parameter per CC.
 
 The Rytm ships as **three** definitions, one per MIDI channel it responds on.
 A `.CKI` maps a CC number to a label with no notion of channel, and the Rytm

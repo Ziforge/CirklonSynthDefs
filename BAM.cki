@@ -1,0 +1,161 @@
+{
+	"instrument_data": {
+		"BAM": {
+			"midi_port": 1,
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 12,
+					"label": "Size"
+				},
+				"slot_2": {
+					"MIDI_CC": 13,
+					"label": "PreDly"
+				},
+				"slot_3": {
+					"MIDI_CC": 15,
+					"label": "RevTm"
+				},
+				"slot_4": {
+					"MIDI_CC": 16,
+					"label": "Damp"
+				},
+				"slot_5": {
+					"MIDI_CC": 14,
+					"label": "Mix"
+				},
+				"slot_6": {
+					"MIDI_CC": 20,
+					"label": "LowCut"
+				},
+				"slot_7": {
+					"MIDI_CC": 21,
+					"label": "HiCut"
+				},
+				"slot_8": {
+					"MIDI_CC": 22,
+					"label": "Chorus"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_12": {
+					"label": "Size",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_13": {
+					"label": "PreDly",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_14": {
+					"label": "Mix",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_15": {
+					"label": "RevTm",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_16": {
+					"label": "Damp",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_17": {
+					"label": "Active",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_18": {
+					"label": "Type",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_19": {
+					"label": "InGain",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_20": {
+					"label": "LowCut",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_21": {
+					"label": "HiCut",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_22": {
+					"label": "Chorus",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_23": {
+					"label": "Freeze",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				}
+			}
+		}
+	}
+}
