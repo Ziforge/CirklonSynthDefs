@@ -55,14 +55,21 @@ The Cirklon has no 14-bit CC mode — an aux row sends one CC, 0–127 — and N
 does not apply, being a different protocol (CC 99/98 select a parameter, 6/38
 carry the value) that these parameters do not respond to.
 
-Full resolution is still reachable, because **P3 auxes are processed in order
-A, B, C, D**. Assign the MSB to an earlier aux row than its LSB:
+Full resolution *appears* reachable. The manual states that "the auxes are
+processed in order" — which is why Redirect Aux exists for aux B, C and D but
+not A — so assigning the MSB to an earlier aux row than its LSB should emit
+them in the right order:
 
     aux A -> cc #12   (Delay Time MSB)
     aux B -> cc #44   (Delay Time LSB)
 
-Each step then emits CC 12 followed by CC 44, which is the order a 14-bit
-receiver expects. One parameter costs two aux rows, so a pattern can drive two
+**Not yet verified on hardware.** The manual documents the *evaluation* order,
+not the order messages are transmitted, and a sequencer could buffer a step's
+output and emit it differently. The two are usually the same, but this scheme
+depends on it, so treat it as untested until someone captures the wire and
+confirms CC 12 arrives before CC 44.
+
+If it holds, one parameter costs two aux rows, so a pattern drives two
 parameters at full resolution — or four at coarse resolution using MSB only,
 which is 128 steps and usually plenty.
 
