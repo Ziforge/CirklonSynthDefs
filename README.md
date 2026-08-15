@@ -44,10 +44,32 @@ This repository provides a **collection of MIDI Control Change (CC) mapping file
 | OTO Machines BOUM | 13 | OTO MIDI specification |
 | Moog MF-108M Cluster Flux | 22 | MF-108M manual, MIDI section |
 
-The Cluster Flux uses 14-bit CCs — an MSB with its LSB at MSB+32. The Cirklon
-sends 7-bit CC, so only the MSBs are useful as track values; the LSBs are
-labelled for completeness. The three OTO boxes each use CC 12 upward, one
-parameter per CC.
+### Getting 14-bit resolution out of the Cluster Flux
+
+The MF-108M's continuous controls are **14-bit**: an MSB CC with its LSB at
+MSB+32, giving 16384 steps rather than 128. Delay Time is CC 12/44, Feedback
+13/45, Mix 14/46, LFO Rate 15/47, LFO Amount 16/48, Output Level 7/39,
+Portamento 5/37.
+
+The Cirklon has no 14-bit CC mode — an aux row sends one CC, 0–127 — and NRPN
+does not apply, being a different protocol (CC 99/98 select a parameter, 6/38
+carry the value) that these parameters do not respond to.
+
+Full resolution is still reachable, because **P3 auxes are processed in order
+A, B, C, D**. Assign the MSB to an earlier aux row than its LSB:
+
+    aux A -> cc #12   (Delay Time MSB)
+    aux B -> cc #44   (Delay Time LSB)
+
+Each step then emits CC 12 followed by CC 44, which is the order a 14-bit
+receiver expects. One parameter costs two aux rows, so a pattern can drive two
+parameters at full resolution — or four at coarse resolution using MSB only,
+which is 128 steps and usually plenty.
+
+The definition pairs them on the track values page in MSB/LSB order, labelled
+`DlyTm` and `DlyTm~`, so the relationship is visible.
+
+The three OTO boxes are simpler: CC 12 upward, one 7-bit parameter per CC.
 
 The Rytm ships as **three** definitions, one per MIDI channel it responds on.
 A `.CKI` maps a CC number to a label with no notion of channel, and the Rytm
