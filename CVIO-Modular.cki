@@ -1,0 +1,158 @@
+{
+	"instrument_data": {
+		"DPO": {
+			"midi_port": "CV",
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": false,
+			"no_fts": false,
+			"track_values": {
+				"slot_1": { "MIDI_CC": 16, "label": "Fold" },
+				"slot_2": { "MIDI_CC": 17, "label": "Shape" },
+				"slot_3": { "MIDI_CC": 18, "label": "Angle" },
+				"slot_4": { "MIDI_CC": 19, "label": "FMidx" },
+				"slot_5": { "MIDI_CC": 20, "label": "MODidx" },
+				"slot_6": { "MIDI_CC": 21, "label": "Follow" },
+				"slot_7": { "track_control": "note%" },
+				"slot_8": { "track_control": "noteC" },
+				"slot_9": { "track_control": "velo%" },
+				"slot_10": { "track_control": "octave" },
+				"slot_11": { "track_control": "tbase" },
+				"slot_12": { "track_control": "knob1" }
+			},
+			"CC_defs": {
+				"CC_16": { "label": "Fold", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_17": { "label": "Shape", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_18": { "label": "Angle", "min_val": 0, "max_val": 127, "start_val": 64 },
+				"CC_19": { "label": "FMidx", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_20": { "label": "MODidx", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_21": { "label": "Follow", "min_val": 0, "max_val": 127, "start_val": 0 }
+			}
+		},
+		"DPO OscA": {
+			"midi_port": "CV",
+			"midi_chan": 2,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": false,
+			"no_fts": false,
+			"track_values": {
+				"slot_1": { "track_control": "note%" },
+				"slot_2": { "track_control": "noteC" },
+				"slot_3": { "track_control": "octave" },
+				"slot_4": { "track_control": "tbase" },
+				"slot_5": { "track_control": "knob1" },
+				"slot_6": { "track_control": "knob2" }
+			},
+			"CC_defs": {}
+		},
+		"Spectraphon A": {
+			"midi_port": "CV",
+			"midi_chan": 3,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": false,
+			"no_fts": false,
+			"track_values": {
+				"slot_1": { "MIDI_CC": 16, "label": "Slide" },
+				"slot_2": { "MIDI_CC": 17, "label": "Focus" },
+				"slot_3": { "MIDI_CC": 18, "label": "Partal" },
+				"slot_4": { "MIDI_CC": 19, "label": "FMidx" },
+				"slot_5": { "track_control": "note%" },
+				"slot_6": { "track_control": "noteC" },
+				"slot_7": { "track_control": "velo%" },
+				"slot_8": { "track_control": "octave" },
+				"slot_9": { "track_control": "tbase" },
+				"slot_10": { "track_control": "knob1" }
+			},
+			"CC_defs": {
+				"CC_16": { "label": "Slide", "min_val": 0, "max_val": 127, "start_val": 64 },
+				"CC_17": { "label": "Focus", "min_val": 0, "max_val": 127, "start_val": 64 },
+				"CC_18": { "label": "Partal", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_19": { "label": "FMidx", "min_val": 0, "max_val": 127, "start_val": 0 }
+			}
+		},
+		"Spectraphon B": {
+			"midi_port": "CV",
+			"midi_chan": 4,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": false,
+			"no_fts": false,
+			"track_values": {
+				"slot_1": { "MIDI_CC": 16, "label": "Slide" },
+				"slot_2": { "MIDI_CC": 17, "label": "Focus" },
+				"slot_3": { "MIDI_CC": 18, "label": "Partal" },
+				"slot_4": { "MIDI_CC": 19, "label": "FMidx" },
+				"slot_5": { "track_control": "note%" },
+				"slot_6": { "track_control": "noteC" },
+				"slot_7": { "track_control": "velo%" },
+				"slot_8": { "track_control": "octave" },
+				"slot_9": { "track_control": "tbase" },
+				"slot_10": { "track_control": "knob1" }
+			},
+			"CC_defs": {
+				"CC_16": { "label": "Slide", "min_val": 0, "max_val": 127, "start_val": 64 },
+				"CC_17": { "label": "Focus", "min_val": 0, "max_val": 127, "start_val": 64 },
+				"CC_18": { "label": "Partal", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_19": { "label": "FMidx", "min_val": 0, "max_val": 127, "start_val": 0 }
+			}
+		},
+		"RxMx": {
+			"midi_port": "CV",
+			"midi_chan": 5,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": true,
+			"no_fts": true,
+			"track_values": {
+				"slot_1": { "MIDI_CC": 16, "label": "Chan" },
+				"slot_2": { "MIDI_CC": 17, "label": "Radiat" },
+				"slot_3": { "MIDI_CC": 18, "label": "Level" },
+				"slot_4": { "track_control": "note%" },
+				"slot_5": { "track_control": "velo%" },
+				"slot_6": { "track_control": "leng%" },
+				"slot_7": { "track_control": "tbase" },
+				"slot_8": { "track_control": "knob1" }
+			},
+			"CC_defs": {
+				"CC_16": { "label": "Chan", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_17": { "label": "Radiat", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_18": { "label": "Level", "min_val": 0, "max_val": 127, "start_val": 0 }
+			}
+		},
+		"Morphagene": {
+			"midi_port": "CV",
+			"midi_chan": 6,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"no_xpose": true,
+			"no_fts": true,
+			"track_values": {
+				"slot_1": { "MIDI_CC": 16, "label": "Orgnz" },
+				"slot_2": { "MIDI_CC": 17, "label": "VarSpd" },
+				"slot_3": { "MIDI_CC": 18, "label": "Morph" },
+				"slot_4": { "MIDI_CC": 19, "label": "GeneSz" },
+				"slot_5": { "MIDI_CC": 20, "label": "SOS" },
+				"slot_6": { "track_control": "note%" },
+				"slot_7": { "track_control": "leng%" },
+				"slot_8": { "track_control": "tbase" },
+				"slot_9": { "track_control": "knob1" }
+			},
+			"CC_defs": {
+				"CC_16": { "label": "Orgnz", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_17": { "label": "VarSpd", "min_val": 0, "max_val": 127, "start_val": 64 },
+				"CC_18": { "label": "Morph", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_19": { "label": "GeneSz", "min_val": 0, "max_val": 127, "start_val": 0 },
+				"CC_20": { "label": "SOS", "min_val": 0, "max_val": 127, "start_val": 127 }
+			}
+		}
+	}
+}
