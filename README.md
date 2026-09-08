@@ -27,7 +27,7 @@ Two flags appear on some instruments and matter:
 
 This repository provides a **collection of MIDI Control Change (CC) mapping files** (.cki format) for the **Sequentix Cirklon** hardware sequencer to control various hardware synthesizers. The instrument definitions enable comprehensive parameter automation across multiple synthesis engines, leveraging the standard MIDI 1.0 protocol for real-time performance control and studio sequencing workflows.
 
-**Current Instruments** — 12 definitions, 455 CC labels:
+**Current Instruments** — 12 MIDI definitions (455 CC labels) plus a CVIO CV/gate set:
 
 | Instrument | CCs | Source |
 |---|---|---|
@@ -43,6 +43,24 @@ This repository provides a **collection of MIDI Control Change (CC) mapping file
 | OTO Machines BIM | 20 | OTO MIDI specification |
 | OTO Machines BOUM | 13 | OTO MIDI specification |
 | Moog MF-108M Cluster Flux | 22 | MF-108M manual, MIDI section |
+| CVIO Modular (DPO ×2, Spectraphon A/B, RxMx, Morphagene) | CV/gate | Make Noise module manuals |
+| Make Noise N.U.S.S. (MultiWAVE) | 4 modes | MultiWAVE MIDI Inlet manual |
+| Expert Sleepers FH-2 (CV/gate expander) | 3 insts | FH-2 manual v1.24 |
+
+The CVIO Modular set targets the `"CV"` port (16 CV + 8 gate outputs) rather
+than MIDI, for a Make Noise rig (DPO+RxMx, Morphagene+Spectraphon). It pairs
+with device-side CVIO Config + clock settings documented in
+[`CVIO-Setup.md`](CVIO-Setup.md). The N.U.S.S. system is driven separately over
+**MIDI** into the MultiWAVE MIDI Inlet (see [`NUSS.cki`](NUSS.cki) +
+[`NUSS-MIDI.md`](NUSS-MIDI.md)) — a MIDI-port instrument, not part of this CV set.
+The FH-2 ([`FH2.cki`](FH2.cki) + [`FH2-Setup.md`](FH2-Setup.md)) expands the
+CV/gate count over USB.
+
+**USB routing (this rig — USB + hubs, laptop-central).** The laptop is the master
+USB host; the Cirklon's `usb1`–`usb6` device virtual ports are routed on the
+laptop to each destination: `usb1`→FH-2, `usb2`→MultiWAVE (N.U.S.S.), `usb3`→Phase 8,
+`usb4`→Ableton clock. The CVIO defs use the internal `"CV"` port instead.
+MPE (ERAE II) routing is covered in [`MPE-Setup.md`](MPE-Setup.md).
 
 ### Getting 14-bit resolution out of the Cluster Flux
 
@@ -231,29 +249,68 @@ where:
 
 ### 3.1 File Structure
 
-```ini
-[INSTRUMENT]
-name = Plinky - Synth Mode
-port = 1               # MIDI port (1-4)
-channel = 1            # MIDI channel (1-16)
-flags = poly_at        # Polyphonic aftertouch
+A `.cki` file is **JSON**. The top-level `instrument_data` object holds one or
+more named instruments; each instrument carries its routing, the aux
+`track_values` page, and a `CC_defs` map of CC number → label/range. A single
+file may define several instruments (see `CVIO-Modular.cki`).
 
-[CC]
-# CC_Number = Parameter_Name
-13 = Osc Shape
-71 = Resonance
-...
-
-[OUTPUT]
-# MIDI CC outputs from Plinky touch columns
-32 = Pos Col1
-...
-
-[PROGRAMS]
-# Program change mapping
-0 = Patch 1
-127 = Patch 128
+```json
+{
+  "instrument_data": {
+    "phase8": {
+      "midi_port": 1,
+      "midi_chan": 1,
+      "default_note": "C 3",
+      "default_patt": "P3",
+      "poly_spread": "off",
+      "no_xpose": true,
+      "no_fts": true,
+      "track_values": {
+        "slot_1": { "MIDI_CC": 12, "label": "Vel1" },
+        "slot_9": { "track_control": "pgm" }
+      },
+      "CC_defs": {
+        "CC_12": { "label": "Vel1", "min_val": 0, "max_val": 127, "start_val": 0 }
+      }
+    }
+  }
+}
 ```
+
+Fields:
+
+- `midi_port` — an integer `1`–`5` for the rear-panel serial MIDI ports, or a
+  string for a named port: `"CV"` (the CVIO expander), `"usb1"`–`"usb6"`
+  (USB device), `"hst1"`–`"hst16"` (USB host, Cirklon 2).
+- `midi_chan` — MIDI channel `1`–`16`. For the `"CV"` port this is the CVIO
+  channel that CV/gate outputs are configured to respond to.
+- `default_note` — Cirklon note naming, where **MIDI note 0 = `C0`** (so `C 3`
+  = MIDI 36, and middle C / MIDI 60 = `C5`).
+- `no_xpose` / `no_fts` — disable pattern transpose / force-to-scale; set where
+  note numbers select *sounds* rather than pitches (drums, the phase8's
+  resonators).
+- `track_values` — the aux/values page. A slot is either a CC (`MIDI_CC` +
+  `label`) or a built-in `track_control` (`pgm`, `quant%`, `note%`, …).
+- `CC_defs` — declares each CC's `label`, `min_val`, `max_val`, `start_val`.
+
+### 3.1.1 CV / gate instruments (CVIO)
+
+Driving the modular from the CVIO is a **two-step** process, and only the first
+step lives in the `.cki` file:
+
+1. **Instrument definition (this file):** set `"midi_port": "CV"` and pick a
+   `midi_chan` (1–16). That is the whole CV-specific difference from a MIDI
+   instrument — note, controller and pitch-bend output for that track is routed
+   to the CVIO on the chosen channel.
+2. **CVIO Config (on the device):** configure which of the 16 CV outputs and 8
+   gate outputs respond to that channel, and their scaling (V/oct vs Hz/V, note
+   range, note/velo/ctrl mix, gate mode, glide). **None of this is stored in the
+   `.cki`** — see [`CVIO-Setup.md`](CVIO-Setup.md) for the exact settings.
+
+> Note on `"midi_port": "CV"`: the string matches the port's on-device label
+> ("set the MIDI Port to 'CV'", manual §8). It is the encoding used by
+> `CVIO-Modular.cki`; if your firmware writes a different token, create one CV
+> instrument on the device, export it, and match that verbatim.
 
 ### 3.2 CC Number Allocation
 
@@ -381,9 +438,26 @@ where $x_i$ = touch coordinate on column $i$.
 
 ```
 CirklonSynthDefs/
-├── Plinky-SynthMode.cki               # Synth mode mapping
-├── Plinky-SamplerMode.cki             # Sampler mode mapping
-├── Plinky_instrument_defs.pdf         # Official parameter documentation
+├── Plinky-SynthMode.cki               # Plinky, synth mode
+├── Plinky-SamplerMode.cki             # Plinky, sampler mode
+├── phase8.cki                         # Korg phase8 (8 resonators)
+├── Digitone2.cki                      # Elektron Digitone II (multi)
+├── RytmMKII.cki                       # Elektron Analog Rytm MKII (drum tracks)
+├── RytmMKII-FX.cki                    # Analog Rytm MKII (FX channel)
+├── RytmMKII-Perf.cki                  # Analog Rytm MKII (performance macros)
+├── OctatrackMKII.cki                  # Elektron Octatrack MKII
+├── BAM.cki                            # OTO Machines BAM
+├── BIM.cki                            # OTO Machines BIM
+├── BOUM.cki                           # OTO Machines BOUM
+├── ClusterFlux.cki                    # Moog MF-108M Cluster Flux (14-bit)
+├── CVIO-Modular.cki                   # Make Noise CV: DPO(×2)/Spectraphon A+B/RxMx/Morphagene
+├── CVIO-Setup.md                      # Device-side CVIO Config + clock distribution
+├── NUSS.cki                           # Make Noise N.U.S.S. MultiWAVE (Poly/Spread/Voice/Transpose)
+├── NUSS-MIDI.md                       # MultiWAVE MIDI implementation + setup
+├── FH2.cki                            # Expert Sleepers FH-2 expander (Mod + 2 gate insts)
+├── FH2-Setup.md                       # FH-2 converter/CC-map config + USB topology
+├── MPE-Setup.md                       # ERAE II MPE paths (direct vs Cirklon soft-thru)
+├── Plinky_instrument_defs.pdf         # Plinky parameter documentation
 └── README.md
 ```
 

@@ -1,7 +1,7 @@
 {
 	"instrument_data": {
 		"phase8": {
-			"midi_port": 1,
+			"midi_port": "usb3",
 			"midi_chan": 1,
 			"default_note": "C 3",
 			"default_patt": "P3",
