@@ -19,27 +19,27 @@
 				},
 				"slot_3": {
 					"MIDI_CC": 16,
-					"label": "Play1"
+					"label": "Pitch"
 				},
 				"slot_4": {
 					"MIDI_CC": 17,
-					"label": "Play2"
+					"label": "Start"
 				},
 				"slot_5": {
-					"MIDI_CC": 22,
-					"label": "Amp1"
+					"MIDI_CC": 18,
+					"label": "Length"
 				},
 				"slot_6": {
-					"MIDI_CC": 25,
-					"label": "Amp4"
+					"MIDI_CC": 48,
+					"label": "Cros"
 				},
 				"slot_7": {
 					"MIDI_CC": 34,
-					"label": "Fx11"
+					"label": "Fx1P1"
 				},
 				"slot_8": {
 					"MIDI_CC": 40,
-					"label": "Fx21"
+					"label": "Fx2P1"
 				},
 				"slot_9": {
 					"track_control": "pgm"
@@ -89,190 +89,184 @@
 					"label": "TrkLvl",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 127
 				},
 				"CC_8": {
 					"label": "TrkBal",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 64
 				},
 				"CC_16": {
-					"label": "Play1",
+					"label": "Pitch",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 64
 				},
 				"CC_17": {
-					"label": "Play2",
+					"label": "Start",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_18": {
-					"label": "Play3",
+					"label": "Length",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 127
 				},
 				"CC_19": {
-					"label": "Play4",
+					"label": "Rate",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_20": {
-					"label": "Play5",
+					"label": "Retrig",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_21": {
-					"label": "Play6",
+					"label": "RtrgTm",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_22": {
-					"label": "Amp1",
+					"label": "Attack",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_23": {
-					"label": "Amp2",
+					"label": "Hold",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_24": {
-					"label": "Amp3",
+					"label": "Releas",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_25": {
-					"label": "Amp4",
+					"label": "Volume",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 64
 				},
 				"CC_26": {
-					"label": "Amp5",
+					"label": "Balnce",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
-				},
-				"CC_27": {
-					"label": "Amp6",
-					"min_val": 0,
-					"max_val": 127,
-					"start_val": 0
+					"start_val": 64
 				},
 				"CC_28": {
-					"label": "Lfo1",
+					"label": "Spd1",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_29": {
-					"label": "Lfo2",
+					"label": "Spd2",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_30": {
-					"label": "Lfo3",
+					"label": "Spd3",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_31": {
-					"label": "Lfo4",
+					"label": "Dpth1",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_32": {
-					"label": "Lfo5",
+					"label": "Dpth2",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_33": {
-					"label": "Lfo6",
+					"label": "Dpth3",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_34": {
-					"label": "Fx11",
+					"label": "Fx1P1",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_35": {
-					"label": "Fx12",
+					"label": "Fx1P2",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_36": {
-					"label": "Fx13",
+					"label": "Fx1P3",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_37": {
-					"label": "Fx14",
+					"label": "Fx1P4",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_38": {
-					"label": "Fx15",
+					"label": "Fx1P5",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_39": {
-					"label": "Fx16",
+					"label": "Fx1P6",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_40": {
-					"label": "Fx21",
+					"label": "Fx2P1",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_41": {
-					"label": "Fx22",
+					"label": "Fx2P2",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_42": {
-					"label": "Fx23",
+					"label": "Fx2P3",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_43": {
-					"label": "Fx24",
+					"label": "Fx2P4",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_44": {
-					"label": "Fx25",
+					"label": "Fx2P5",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_45": {
-					"label": "Fx26",
+					"label": "Fx2P6",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
@@ -281,13 +275,13 @@
 					"label": "TrkLvl",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 127
 				},
 				"CC_47": {
 					"label": "CueLvl",
 					"min_val": 0,
 					"max_val": 127,
-					"start_val": 0
+					"start_val": 127
 				},
 				"CC_48": {
 					"label": "Cros",
@@ -374,97 +368,97 @@
 					"start_val": 0
 				},
 				"CC_112": {
-					"label": "MidiTr",
+					"label": "MTr1",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_113": {
-					"label": "MidiTr",
+					"label": "MTr2",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_114": {
-					"label": "MidiTr",
+					"label": "MTr3",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_115": {
-					"label": "MidiTr",
+					"label": "MTr4",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_116": {
-					"label": "MidiTr",
+					"label": "MTr5",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_117": {
-					"label": "MidiTr",
+					"label": "MTr6",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_118": {
-					"label": "MidiTr",
+					"label": "MTr7",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_119": {
-					"label": "MidiTr",
+					"label": "MTr8",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_120": {
-					"label": "MidiTr",
+					"label": "MTr9",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_121": {
-					"label": "MidiTr",
+					"label": "MTr10",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_122": {
-					"label": "MidiTr",
+					"label": "MTr11",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_123": {
-					"label": "MidiTr",
+					"label": "MTr12",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_124": {
-					"label": "MidiTr",
+					"label": "MTr13",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_125": {
-					"label": "MidiTr",
+					"label": "MTr14",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_126": {
-					"label": "MidiTr",
+					"label": "MTr15",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
 				},
 				"CC_127": {
-					"label": "MidiTr",
+					"label": "MTr16",
 					"min_val": 0,
 					"max_val": 127,
 					"start_val": 0
