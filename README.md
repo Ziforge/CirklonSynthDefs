@@ -4,8 +4,8 @@ JSON `.cki` instrument definitions for the **Sequentix Cirklon**, plus device
 setup notes for a Make Noise + FH-2 rig.
 
 **Synths (MIDI CC maps):** Plinky (synth/sampler), Korg phase8, Elektron
-Digitone II · Analog Rytm MKII (+FX/Perf) · Octatrack MKII, OTO BAM/BIM/BOUM,
-Moog MF-108M Cluster Flux.
+Digitone II · Analog Rytm MKII (+FX/Perf) · Octatrack MKII · Analog Heat,
+OTO BAM/BIM/BOUM, Moog MF-108M Cluster Flux.
 
 **Rig (CV + MIDI):** `CVIO-Modular.cki` (DPO, Spectraphon A/B, RxMx, Morphagene),
 `NUSS.cki` (MultiWAVE, 4 modes), `FH2.cki` (FH-2 expander).
@@ -19,6 +19,25 @@ Moog MF-108M Cluster Flux.
 
 USB routing (laptop-central): `usb1`→FH-2, `usb2`→MultiWAVE, `usb3`→Phase 8,
 `usb4`→Ableton; CVIO defs use the internal `"CV"` port.
+
+## Generated definitions
+
+`AnalogHeat.cki` is compiled from the parameter map behind
+[`heat-mcp`](https://github.com/Ziforge/heat-mcp) by `rig_midi.cirklon`,
+rather than written by hand. The same map drives the MCP server, so the
+Cirklon's track page and the software control cannot drift apart — a test in
+each device repo regenerates the `CC_defs` here and fails on any
+disagreement.
+
+That check also covers the hand-written `BAM`, `BIM`, `BOUM`, `ClusterFlux`
+and `OctatrackMKII` definitions, which it reproduces exactly.
+
+Two constraints the exporter enforces, learned from the files already here:
+
+- Labels are **6 characters maximum** — nothing in these 500-odd CC
+  definitions exceeds it.
+- `CC_defs` ranges are **raw CC**, so a bipolar parameter is `0–127` with
+  `start_val` 64, not its panel range.
 
 ## Use
 
