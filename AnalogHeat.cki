@@ -1,0 +1,341 @@
+{
+	"instrument_data": {
+		"AnalogHeat": {
+			"midi_port": 1,
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 12,
+					"label": "Drive"
+				},
+				"slot_2": {
+					"MIDI_CC": 11,
+					"label": "Wet"
+				},
+				"slot_3": {
+					"MIDI_CC": 8,
+					"label": "DryWet"
+				},
+				"slot_4": {
+					"MIDI_CC": 74,
+					"label": "Freq"
+				},
+				"slot_5": {
+					"MIDI_CC": 71,
+					"label": "Reso"
+				},
+				"slot_6": {
+					"MIDI_CC": 13,
+					"label": "Dirt"
+				},
+				"slot_7": {
+					"MIDI_CC": 9,
+					"label": "EQ Lo"
+				},
+				"slot_8": {
+					"MIDI_CC": 10,
+					"label": "EQ Hi"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_7": {
+					"label": "Vol",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_8": {
+					"label": "DryWet",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_9": {
+					"label": "EQ Lo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_10": {
+					"label": "EQ Hi",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_11": {
+					"label": "Wet",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_12": {
+					"label": "Drive",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_13": {
+					"label": "Dirt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_14": {
+					"label": "Env",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_15": {
+					"label": "Lfo",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_16": {
+					"label": "Trig",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_17": {
+					"label": "EnvBse",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_18": {
+					"label": "EnvWdt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_19": {
+					"label": "EnvMod",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_20": {
+					"label": "EnvDp1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_21": {
+					"label": "EnvDp2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_22": {
+					"label": "LfoSpd",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_23": {
+					"label": "LfoMlt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_24": {
+					"label": "LfoFad",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_25": {
+					"label": "LfoMod",
+					"min_val": 0,
+					"max_val": 4,
+					"start_val": 0
+				},
+				"CC_26": {
+					"label": "LfoSrt",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_27": {
+					"label": "LfoDp1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_28": {
+					"label": "LfoDp2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_70": {
+					"label": "Circ",
+					"min_val": 0,
+					"max_val": 7,
+					"start_val": 0
+				},
+				"CC_71": {
+					"label": "Reso",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_72": {
+					"label": "EnvRel",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_73": {
+					"label": "EnvAtk",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_74": {
+					"label": "Freq",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_75": {
+					"label": "EnvDs1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_76": {
+					"label": "EnvDs2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_77": {
+					"label": "LfoDs1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_78": {
+					"label": "LfoDs2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_79": {
+					"label": "FrqPan",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_80": {
+					"label": "FltTyp",
+					"min_val": 0,
+					"max_val": 13,
+					"start_val": 0
+				},
+				"CC_83": {
+					"label": "LfoWav",
+					"min_val": 0,
+					"max_val": 6,
+					"start_val": 0
+				},
+				"CC_85": {
+					"label": "CVADst",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_86": {
+					"label": "CVADep",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_87": {
+					"label": "ExADst",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_88": {
+					"label": "ExADep",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_89": {
+					"label": "CVBDst",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_90": {
+					"label": "CVBDep",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_91": {
+					"label": "ExBDst",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_92": {
+					"label": "ExBDep",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				}
+			}
+		}
+	}
+}
