@@ -1,0 +1,606 @@
+{
+	"instrument_data": {
+		"DN2 FM Tone": {
+			"midi_port": 1,
+			"midi_chan": 1,
+			"default_note": "C 3",
+			"default_patt": "P3",
+			"poly_spread": "off",
+			"multi": true,
+			"track_values": {
+				"slot_1": {
+					"MIDI_CC": 40,
+					"label": "ALGO"
+				},
+				"slot_2": {
+					"MIDI_CC": 41,
+					"label": "C"
+				},
+				"slot_3": {
+					"MIDI_CC": 42,
+					"label": "A"
+				},
+				"slot_4": {
+					"MIDI_CC": 43,
+					"label": "B"
+				},
+				"slot_5": {
+					"MIDI_CC": 44,
+					"label": "HARM"
+				},
+				"slot_6": {
+					"MIDI_CC": 45,
+					"label": "DTUN"
+				},
+				"slot_7": {
+					"MIDI_CC": 46,
+					"label": "FDBK"
+				},
+				"slot_8": {
+					"MIDI_CC": 47,
+					"label": "MIX"
+				},
+				"slot_9": {
+					"track_control": "pgm"
+				},
+				"slot_10": {
+					"track_control": "quant%"
+				},
+				"slot_11": {
+					"track_control": "note%"
+				},
+				"slot_12": {
+					"track_control": "noteC"
+				},
+				"slot_13": {
+					"track_control": "velo%"
+				},
+				"slot_14": {
+					"track_control": "veloC"
+				},
+				"slot_15": {
+					"track_control": "leng%"
+				},
+				"slot_16": {
+					"track_control": "tbase"
+				},
+				"slot_17": {
+					"track_control": "xpos"
+				},
+				"slot_18": {
+					"track_control": "octave"
+				},
+				"slot_19": {
+					"track_control": "knob1"
+				},
+				"slot_20": {
+					"track_control": "knob2"
+				},
+				"slot_21": {
+					"track_control": "fts-R"
+				},
+				"slot_22": {
+					"track_control": "fts-S"
+				}
+			},
+			"CC_defs": {
+				"CC_3": {
+					"label": "NOTE",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_4": {
+					"label": "VEL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_5": {
+					"label": "LEN",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_9": {
+					"label": "PRT.T",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_13": {
+					"label": "FLTR",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_14": {
+					"label": "LFO",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_16": {
+					"label": "FREQ",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_17": {
+					"label": "RESO",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_18": {
+					"label": "TYPE",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_19": {
+					"label": "DELAY",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_20": {
+					"label": "F.ATK",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_21": {
+					"label": "F.DEC",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_22": {
+					"label": "F.SUS",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_23": {
+					"label": "F.REL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_24": {
+					"label": "ENV",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_25": {
+					"label": "F.RSET",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_26": {
+					"label": "KEY",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_27": {
+					"label": "BASE",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_28": {
+					"label": "WDTH",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_29": {
+					"label": "CHR",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_30": {
+					"label": "DEL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_31": {
+					"label": "REV",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_40": {
+					"label": "ALGO",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_41": {
+					"label": "C",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_42": {
+					"label": "A",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_43": {
+					"label": "B",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_44": {
+					"label": "HARM",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_45": {
+					"label": "DTUN",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_46": {
+					"label": "FDBK",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_47": {
+					"label": "MIX",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_48": {
+					"label": "A.atk",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_49": {
+					"label": "A.dec",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_50": {
+					"label": "A.end",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_51": {
+					"label": "A.lev",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_52": {
+					"label": "B.atk",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_53": {
+					"label": "B.dec",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_54": {
+					"label": "B.end",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_55": {
+					"label": "B.lev",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_56": {
+					"label": "ADEL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_57": {
+					"label": "ATRG",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_58": {
+					"label": "ARST",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_59": {
+					"label": "PHRT",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_60": {
+					"label": "BDEL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_61": {
+					"label": "BTRG",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_62": {
+					"label": "BRST",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_65": {
+					"label": "PRT.ON",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_70": {
+					"label": "OFS.C",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_71": {
+					"label": "OFS.A",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_72": {
+					"label": "OFS.B1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_73": {
+					"label": "OFS.B2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_75": {
+					"label": "KEY.A",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_76": {
+					"label": "KEY.B1",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_77": {
+					"label": "KEY.B2",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_78": {
+					"label": "BR",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_79": {
+					"label": "SRR",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_80": {
+					"label": "SR.RT",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_81": {
+					"label": "OVER",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_82": {
+					"label": "OD.RT",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_84": {
+					"label": "A.ATK",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_85": {
+					"label": "HOLD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_86": {
+					"label": "A.DEC",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_87": {
+					"label": "A.SUS",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_88": {
+					"label": "A.REL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_89": {
+					"label": "PAN",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_90": {
+					"label": "VOL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_91": {
+					"label": "A.MODE",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_92": {
+					"label": "A.RSET",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_94": {
+					"label": "MUTE",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_95": {
+					"label": "LEVEL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_102": {
+					"label": "L1.SPD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_103": {
+					"label": "L1.MUL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_104": {
+					"label": "L1.FAD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_105": {
+					"label": "L1.DES",
+					"min_val": 0,
+					"max_val": 99,
+					"start_val": 0
+				},
+				"CC_106": {
+					"label": "L1.WAV",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_107": {
+					"label": "L1.SPH",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_108": {
+					"label": "L1.MOD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_109": {
+					"label": "L1.DEP",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_110": {
+					"label": "PATMUT",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_111": {
+					"label": "L2.SPD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_112": {
+					"label": "L2.MUL",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_113": {
+					"label": "L2.FAD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 64
+				},
+				"CC_114": {
+					"label": "L2.DES",
+					"min_val": 0,
+					"max_val": 99,
+					"start_val": 0
+				},
+				"CC_115": {
+					"label": "L2.WAV",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_116": {
+					"label": "L2.SPH",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_117": {
+					"label": "L2.MOD",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				},
+				"CC_118": {
+					"label": "L2.DEP",
+					"min_val": 0,
+					"max_val": 127,
+					"start_val": 0
+				}
+			}
+		}
+	}
+}

@@ -4,7 +4,8 @@ JSON `.cki` instrument definitions for the **Sequentix Cirklon**, plus device
 setup notes for a Make Noise + FH-2 rig.
 
 **Synths (MIDI CC maps):** Plinky (synth/sampler), Korg phase8, Elektron
-Digitone II · Analog Rytm MKII (+FX/Perf, +32 machines) · Octatrack MKII ·
+Digitone II (+4 machines, send FX) · Analog Rytm MKII (+FX/Perf, +32
+machines) · Octatrack MKII ·
 Analog Heat,
 OTO BAM/BIM/BOUM, Moog MF-108M Cluster Flux.
 
@@ -39,6 +40,37 @@ Two constraints the exporter enforces, learned from the files already here:
   definitions exceeds it.
 - `CC_defs` ranges are **raw CC**, so a bipolar parameter is `0–127` with
   `start_val` 64, not its panel range.
+
+### Digitone II machines
+
+The Digitone needs more than one definition for two separate reasons. Its
+four SYN machines share CC 40–77 and only the meaning changes — Appendix C.3
+calls them "Data entry knob A–H (machine dependent)" — and its six filter
+machines do the same with CC 16–24. So there is one definition per SYN
+machine, each with the multi-mode filter:
+
+| file | instrument |
+|---|---|
+| `Digitone2-FMTone.cki` | `DN2 FM Tone` |
+| `Digitone2-FMDrum.cki` | `DN2 FM Drum` |
+| `Digitone2-Wavetone.cki` | `DN2 Wavetone` |
+| `Digitone2-Swarmer.cki` | `DN2 Swarmer` |
+| `Digitone2-SendFX.cki` | `DN2 Send FX` — **MIDI channel 9** |
+
+Each machine definition leads its track page with that machine's own SYN
+page 1, so `DN2 FM Drum` reads `TUNE STIM SDEP ALGO OP.C OP.AB FDBK FOLD`
+exactly as the device does.
+
+`Digitone2-SendFX.cki` is separate because the send effects, mixer and
+master overdrive answer on the **FX CONTROL CH** rather than a track's —
+which is why their CC numbers are free to repeat the track's, and they do:
+the chorus and the machines both claim CC 70. Set that file's channel to
+match `SETTINGS > MIDI CONFIG > CHANNELS > FX CONTROL CH`.
+
+Labels are the device's own screen names from Appendix A, with a one-letter
+section prefix added only where two sections would otherwise show the same
+word — `D.MIX`, `R.MIX`, `C.MIX` for the three send mixes, rather than three
+rows all reading `MIX`.
 
 ### Rytm machines
 
