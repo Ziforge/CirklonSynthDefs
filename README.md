@@ -61,6 +61,14 @@ Each machine definition leads its track page with that machine's own SYN
 page 1, so `DN2 FM Drum` reads `TUNE STIM SDEP ALGO OP.C OP.AB FDBK FOLD`
 exactly as the device does.
 
+**`Digitone2.cki` is still here and is not superseded.** It labels the same
+CCs generically — `P1A`–`P1H` for SYN page 1 knobs A–H, as Appendix C.3
+names them — so one definition works whatever machine a track runs. Use it
+when you switch machines often and want the slots to stay put; use the
+per-machine files when you want the knobs named. They describe the same
+CCs, so comparing one against the other reports dozens of differences that
+are not errors.
+
 `Digitone2-SendFX.cki` is separate because the send effects, mixer and
 master overdrive answer on the **FX CONTROL CH** rather than a track's —
 which is why their CC numbers are free to repeat the track's, and they do:
